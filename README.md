@@ -6,6 +6,8 @@
 
 This project is a simple movie search app on React. Information about the movies is from an API on the website [Themovieed.org](https://www.themoviedb.org/). In order to get this API, you need to sign in.
 
+[Check it out here](https://react-search-app-movie.netlify.app/)
+
 ## Code
 
 We have the index.js rendering App.js with the SearchMovie.js component.
