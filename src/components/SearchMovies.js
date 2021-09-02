@@ -5,7 +5,7 @@ function SearchMovies() {
     const [query, setQuery] = useState('')
     const [movies, setMovies] = useState([])
 
-     function handleChange(e) {
+    function handleChange(e) {
         const query = e.target.value
         setQuery(query)
     }
@@ -15,7 +15,7 @@ function SearchMovies() {
                         
         const url = `https://api.themoviedb.org/3/search/movie?api_key=395598e83f13d4958145b17563884ed7&language=en-US&query=${query}&page=1&include_adult=false`
         
-         try {
+        try {
             const res = await fetch(url);
             const data  = await res.json();
             setMovies(data.results)
@@ -23,13 +23,13 @@ function SearchMovies() {
             console.error(err);
         }
     }
-    function handleClick(e) {
-         if(query === ''){
-           alert('please, enter the movie name')
-            e.preventDefault()
+        function handleClick(e) {
+            if(query === ''){
+                alert('please, enter the movie name')
+                e.preventDefault()
+            }
         }
-    }
-            
+
     return (
         <>
         <form className="form" onSubmit={searchMovies}>

@@ -1,3 +1,21 @@
+# React Movie Search
+
+This project is a simple movie search app on React. Information about the movies is from an API on the website [Themovieed.org](https://www.themoviedb.org/). In order to get this API, you need to sign in.
+
+## Code
+
+We have the index.js rendering App.js with the SearchMovie.js component.
+
+In this component, we return JSX with a form and a div. On the form, there's an input and a button for the user to enter the movie name. In the below div there's a component (MovieCard.js) with all information about the searched movie.
+
+We use React Hooks (useState) to store the input data
+	const [query, setQuery] = useState(''),
+through handlleChange function,
+and to store the API results
+	const [movies, setMovies] = useState([])
+through searchMovies function .
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
