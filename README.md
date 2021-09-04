@@ -4,7 +4,7 @@
 
 ![image](https://user-images.githubusercontent.com/80006401/131901356-cfdcda77-09ab-45a0-a712-adf21d834216.png)
 
-This project is a simple movie search app on React. Information about the movies is from an API on the website [Themovieed.org](https://www.themoviedb.org/). In order to get this API, you need to sign in.
+This project is a simple movie search app on React. Information about the movies is from an API on the website [Themovieed.org](https://www.themoviedb.org/). In order to get this API, you need to sign up.
 
 [Check it out here](https://react-search-app-movie.netlify.app/)
 
