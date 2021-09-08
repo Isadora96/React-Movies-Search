@@ -23,15 +23,15 @@ function SearchMovies() {
             console.error(err);
         }
     }
-        function handleClick(e) {
-            if(query === ''){
-                alert('please, enter the movie name')
-                e.preventDefault()
-            }
+    function handleClick(e) {
+        if(query === ''){
+            alert('please, enter the movie name')
+            e.preventDefault()
         }
+    }
 
     return (
-        <>
+    <>
         <form className="form" onSubmit={searchMovies}>
             <label className="label" htmlFor="query">Movie Name</label>
             <input
@@ -49,7 +49,7 @@ function SearchMovies() {
                 <MovieCard movie={movie} key={movie.id} />
             ))}
         </div>  
-        </> 
+    </> 
     )
 }
 
