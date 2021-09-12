@@ -19,10 +19,12 @@ function SearchMovies() {
             const res = await fetch(url);
             const data  = await res.json();
             setMovies(data.results)
+            
         }catch(err){
             console.error(err);
         }
     }
+
     function handleClick(e) {
         if(query === ''){
             alert('please, enter the movie name')

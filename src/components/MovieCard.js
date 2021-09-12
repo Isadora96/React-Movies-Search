@@ -13,7 +13,7 @@ function MovieCard({movie}) {
                 <p><small><i className="far fa-calendar-check"></i> RELEASE DATE: {movie.release_date}</small></p>
                 <p><small><i className="fas fa-star"></i> RATING: {movie.vote_average}</small></p>
                 <p className="card--desc">
-                    {movie.overview ? movie.overview : 'description unavailable'}`
+                    {movie.overview ? movie.overview : 'description unavailable'}
                 </p>
             </div>
         </div>
