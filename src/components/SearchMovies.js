@@ -23,6 +23,7 @@ function SearchMovies() {
         }catch(err){
             console.error(err);
         }
+        setQuery('')
     }
 
     function handleClick(e) {
