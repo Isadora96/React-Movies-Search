@@ -123,6 +123,19 @@ i {
   text-align: justify;
 }
 
+.error {
+  text-align: center;
+  padding: .2em .5em;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.95);
+}
+
+.error p {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: rgb(240, 234, 234);
+}
+
 @media (min-width: 700px){
   .form {
     grid-template-columns: auto 1fr auto;
@@ -160,5 +173,9 @@ i {
     font-size: 2rem;
     letter-spacing: 1.3px;
     padding: .5em 2em;
+  }
+
+  .error p {
+    font-size: 4rem;
   }
 }

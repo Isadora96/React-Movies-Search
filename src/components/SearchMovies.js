@@ -20,15 +20,19 @@ function SearchMovies() {
             const data  = await res.json();
             setMovies(data.results)
             
-        }catch(err){
-            console.error(err);
+        } catch(err) {
+            document.querySelector(".card-list").textContent = `
+                <div class="error">
+                    <p>Something went wrong, try to refresh the page!</p>
+                </div>
+            `
         }
         setQuery('')
     }
 
     function handleClick(e) {
         if(query === ''){
-            alert('please, enter the movie name')
+            alert("Please, enter the movie name")
             e.preventDefault()
         }
     }
