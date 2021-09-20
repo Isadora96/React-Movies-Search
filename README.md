@@ -1,8 +1,25 @@
-# React Typing App
+# React Movie Search
 
-[Check it out here]()
+![image](https://user-images.githubusercontent.com/80006401/131901270-0ef5dc86-dfd5-40df-ab2b-76474ba8e8cc.png)
+
+![image](https://user-images.githubusercontent.com/80006401/131901356-cfdcda77-09ab-45a0-a712-adf21d834216.png)
+
+This project is a simple movie search app on React. Information about the movies is from an API on the website [Themovieed.org](https://www.themoviedb.org/). In order to get this API, you need to sign up.
+
+[Check it out here](https://react-search-app-movie.netlify.app/)
 
 ## Code
+
+We have the index.js rendering App.js with the SearchMovie.js component.
+
+In this component, we return JSX with a form and a div. On the form, there's an input and a button for the user to enter the movie name. In the below div there's a component (MovieCard.js) with all information about the searched movie.
+
+We use React Hooks (useState) to store the input data
+	const [query, setQuery] = useState(''),
+through handlleChange function,
+and to store the API results
+	const [movies, setMovies] = useState([])
+through searchMovies function .
 
 
 # Getting Started with Create React App
